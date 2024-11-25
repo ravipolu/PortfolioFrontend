@@ -1,0 +1,127 @@
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4.5em;
+}
+
+h1{
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+p{
+    font-size: 20px;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 50px;
+    color: #555;
+    text-wrap: wrap;
+}
+
+.bar{
+    height: 5px;
+    width: 70px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail{
+    width: 100%;
+}
+
+.detail > h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.contact{
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: rgb(124, 55, 188);
+        font-size: larger;
+        border: 1px;
+        margin-top: 30px;
+}
+
+.skills{
+    margin: 30px 15px auto 15px;
+}
+
+.skills > h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.skillList {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+}
+
+.list{
+    height: 15px;
+    width: fit-content;
+    padding: 20px;
+    background-color: rgb(39, 220, 39);
+    margin: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+@media screen and (min-width: 1200px) {
+        .section{
+            flex-direction: row;
+            width: 90%;
+            justify-content: center;
+            /* align-items: center; */
+            margin: 20px auto 0 auto;
+
+        }
+
+        .detail{
+            width: 50%;
+            left: 30px;
+            margin-left: 50px;
+        }
+        .detail >h1{
+            text-align: left;
+            
+        }
+
+        .about-text > p{
+            font-size: 26px;
+            margin: 0 80px;
+            padding: 0 60px;
+        }
+        .detail > p{
+            font-size: 20px;
+            text-align: left;
+            margin: 0;
+        }
+
+        .skills{
+            width: 50%;
+            font-size: 28px;
+            margin-top: 0;
+        }
+        .list{
+            height: 20px;
+        }
+}

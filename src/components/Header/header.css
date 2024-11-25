@@ -1,0 +1,145 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    height: 4.5em;
+    top: 0;
+}
+
+.header__content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.header__logo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    left: 20px;  
+}
+
+.logo__image{
+    width: 60px;
+    height: 60px;
+    
+}
+
+img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.header__logo > span{
+    padding-left: 10px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.header__main{
+    position: absolute;
+    display: flex;
+    right: 20px;
+}
+
+.header__links{
+    display: flex;
+    list-style-type: none;
+    padding: 1px;
+    margin: 0;
+}
+
+.menuui{
+    display: none;
+}
+
+.link__wrapper{
+    padding: 0 8px 0 8px;
+    margin: 0 8px 0 8px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.link__wrapper:hover{
+    cursor: pointer;
+}
+
+.smallscreen{
+    display: none;
+}
+
+.links{
+    color: #333;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.links:hover{
+    color: rgb(233, 59, 59);
+}
+
+@media screen and (max-width:760px) {
+    .link__wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .link__wrapper{
+       visibility: hidden;
+    }
+
+    .menuui{
+        display: block;
+        font-size: 30px;
+        margin: auto 15px auto 15px;
+    }
+
+    .smallscreen{
+        display: block;
+        position: absolute;
+        width: 250px;
+        height: fit-content;
+        right: 0;
+        top: 4.5em;
+        background-color: #bbb;
+    }
+
+    .smallscreen> ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .smallscreen >ul >li {
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding-top: 20px;
+    }
+    .smallscreen >ul >li> a{
+        color: #333;
+        text-decoration: none;
+    }
+    .smallscreen >ul >li>a:hover{
+        cursor: pointer;
+        color: rgb(217, 51, 51);
+    }
+
+}
