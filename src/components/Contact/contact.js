@@ -16,7 +16,7 @@ const Contact = ()=>{
     
         // console.log(mail,name,message)
 
-        await fetch(`https://protfoliobackend-4j0n.onrender.com`,     // http://localhost:4000/api/send
+        await fetch(`https://protfoliobackend-4j0n.onrender.com/api/send`,     // http://localhost:4000/api/send
             {
                 method: "POST",
                 body: JSON.stringify({
